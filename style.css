@@ -302,7 +302,7 @@ nav .logo p {
     margin-bottom: 8px;
 }
 
-#contact .hire-btn {
+#about .hire-btn, #contact .hire-btn {
     display: block;
     width: max-content;
     padding: 1rem;
