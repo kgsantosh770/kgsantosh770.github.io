@@ -1,345 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-        <title>Santosh | Portfolio</title>
-	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Preahvihear&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <nav>
-            <a href class="logo">
-                <p>KG Santosh</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Santosh | Portfolio</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href class="logo">
+        <p>KG Santosh</p>
+      </a>
+      <div class="nav-items desktop">
+        <a href="#bio">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <section id="mobileMenu" class="bottom-nav mobile">
+      <div class="nav-items">
+        <a href="#bio">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="sticky-btn">
+        <img src="./images/mobile-menu-closed.png" alt="menu" id="menuIcon" />
+      </div>
+    </section>
+
+    <section id="bio">
+      <div class="profile-image" title="Click to view my resume">
+        <a
+          type="button"
+          href="https://drive.google.com/file/d/1vh77dskceykLyhb-pxcmbJIsgapLbMuT/view?usp=sharing"
+          class="hire-btn"
+          target="_blank"
+        >
+          <img src="./images/profile-image.png" alt="profile" />
+        </a>
+        <a
+          type="button"
+          href="https://drive.google.com/file/d/1vh77dskceykLyhb-pxcmbJIsgapLbMuT/view?usp=sharing"
+          class="floating-btn hire-btn"
+          target="_blank"
+        >
+          Tap <span class="mobile">👆</span> to view my
+          <span class="bg-highlight">Resume</span>
+        </a>
+      </div>
+      <div class="oneline-bio">
+        <div class="name">
+          <p>Hello👋 I am <span>Santosh</span></p>
+          <br />
+          <span class="font-large bg-highlight">Software Engineer</span>
+          <span>
+            at
+            <span class="font-medium bg-highlight">Avow Solutions</span>
+          </span>
+        </div>
+        <br />
+        <p>A developer who</p>
+        <p>writes code with <span class="circle">Passion</span> ...</p>
+        <br />
+        <div class="expertise">
+          I specialize in <span class="bg-highlight">HTML</span>
+          <span class="bg-highlight">CSS</span>
+          <span class="bg-highlight">JavaScript</span>
+          <span class="bg-highlight">ReactJS</span>
+          <span class="bg-highlight">VueJS</span>
+          <span class="bg-highlight">NextJS</span>
+        </div>
+        <br />
+        <div class="contact-details">
+          React me at 👇 <br /><br />
+          <a class="data" href="tel:+918825840570"
+            >📞 <span class="underline">+918825840570</span></a
+          >
+          <br />
+          <a
+            class="data"
+            href="mailto:santhoshkrishna770@gmail.com"
+            class="email"
+          >
+            📩 <span class="underline">santhoshkrishna770@gmail.com</span>
+          </a>
+          <br />
+          <a
+            class="data linkedin"
+            style="display: inline-flex; align-items: center"
+            href="https://www.linkedin.com/in/santoshkg/"
+            title="linkedin"
+            target="_blank"
+            ><img
+              style="height: 20px"
+              src="./images/linkedin.png"
+              alt="linkedin"
+              title="linkedin"
+            />&nbsp; <span class="underline">Linkenin</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="exp-edu">
+      <p class="title">Work Experience</p>
+      <div class="card">
+        <div class="time bg-highlight">Apr 2024 - current</div>
+        <div class="img-desc">
+          <img src="./images/code.png" alt="code" />
+          <div class="desc">
+            <div class="company-name">Avow Solutions</div>
+            <div class="designation">Software Engineer</div>
+            <div class="role"></div>
+            <br />
+            <div class="details">
+              - Migrated 4+ huge modules from Vue2 to Vue3 codebase.<br /><br />
+              - Explored the concept of Cargo shipments and many shipment
+              related terms. <br /><br />
+              - Gained good exposure of startup environment. <br /><br />
+            </div>
+            <div class="techs">
+              <img src="./images/vue.png" alt="vuejs" title="Vue Js" />
+              <img
+                src="./images/elementplus.svg"
+                alt="element plus"
+                title="Element Plus"
+                style="height: 30px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="time bg-highlight">Oct 2021 - Apr 2024</div>
+        <div class="img-desc">
+          <img src="./images/code.png" alt="code" />
+          <div class="desc">
+            <div class="company-name">Accenture</div>
+            <div class="designation">Software Engineer</div>
+            <div class="role">Frontend Developer</div>
+            <div class="details">
+              - Converted XD and Figma designs to responsive web code.<br /><br />
+              - Applied interaction logic to components in ReactJS. <br /><br />
+              - Solved 100's of FED bugs within 2 weeks thus leading to client’s
+              appreciation and a quality delivery. <br /><br />
+              - Received multiple recognitions and rewards for my front-end
+              skills and client appreciation for my quick learning ability.
+              <br /><br />
+            </div>
+            <div class="techs">
+              <img src="./images/react.png" alt="reactjs" title="ReactJs" />
+              <img src="./images/html.png" alt="html" title="HTML" />
+              <img src="./images/css.png" alt="css" title="CSS" />
+              <img src="./images/sass.png" alt="scss" title="SCSS" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="exp-edu">
+      <p class="title">Education</p>
+      <div class="card">
+        <div class="time">2017 - 2021</div>
+        <div class="img-desc">
+          <img src="./images/degree.png" alt="code" />
+          <div class="desc">
+            <div class="company-name">
+              Velammal College of Engineering and Technology
+            </div>
+            <div class="designation">Bachelor's degree (BE)</div>
+            <div class="role">Computer Science and Engineering</div>
+            <div class="techs">
+              <img src="./images/html.png" alt="html" title="HTML" />
+              <img src="./images/css.png" alt="css" title="CSS" />
+              <img src="./images/python.png" alt="python" title="Python" />
+              <img src="./images/java.png" alt="java" title="Java" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="time">2015 - 2017</div>
+        <div class="img-desc">
+          <img src="./images/book.png" alt="code" />
+          <div class="desc">
+            <div class="company-name">
+              CEOA matriculation higher secondary school
+            </div>
+            <div class="designation">11th & 12th grade</div>
+            <div class="role">Computer Science</div>
+            <div class="techs">
+              <img src="./images/c++.png" alt="c++" title="C++" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="current">
+      <p class="heading">
+        I'm currently <span>looking to join a team</span> who makes life easier
+        with code.
+      </p>
+      <p class="sub-heading">
+        Let's collaborate and create stunning interfaces that leave a lasting
+        impression.
+      </p>
+    </section>
+
+    <section id="skills">
+      <button class="hide" onclick="toggleSkillDetails(this)">
+        <img src="./images/eye-close.png" alt="hidden" class="eye-close" />
+        <img src="./images/eye-open.png" alt="visible" class="eye-open" />
+      </button>
+      <p class="skillsets-title">Skills</p>
+      <div class="all-skillsets">
+        <div class="skillsets">
+          <p class="skillsets-heading">Frontend Skills</p>
+          <p class="skillsets-subheading">The most experienced skills.</p>
+          <ul>
+            <li>
+              <img src="./images/html.png" alt="html" />
+              <p class="skill-name">HTML</p>
+            </li>
+            <li>
+              <img src="./images/css.png" alt="css" />
+              <p class="skill-name">CSS</p>
+            </li>
+            <li>
+              <img src="./images/js.png" alt="javascript" />
+              <p class="skill-name">JavaScript</p>
+            </li>
+            <li>
+              <img src="./images/react.png" alt="reactjs" />
+              <p class="skill-name">ReactJS</p>
+            </li>
+            <li>
+              <img src="./images/vue.png" alt="vuejs" />
+              <p class="skill-name">VueJs</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillsets">
+          <p class="skillsets-heading">CSS frameworks</p>
+          <p class="skillsets-subheading">
+            Basic understanding of below frameworks
+          </p>
+          <ul>
+            <li>
+              <img src="./images/tailwindcss.png" alt="tailwindcss" />
+              <p class="skill-name">TailwindCSS</p>
+            </li>
+            <li>
+              <img src="./images/bootstrap.png" alt="bootstrap" />
+              <p class="skill-name">Bootstrap</p>
+            </li>
+            <li>
+              <img
+                src="./images/elementplus.svg"
+                alt="elementplus"
+                style="transform: scale(1)"
+              />
+              <p class="skill-name">Elemene Plus</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillsets">
+          <p class="skillsets-heading">Programming</p>
+          <p class="skillsets-subheading">Languages with good knowledge.</p>
+          <ul>
+            <li>
+              <img src="./images/python.png" alt="python" />
+              <p class="skill-name">Python</p>
+            </li>
+            <li>
+              <img src="./images/java.png" alt="java" />
+              <p class="skill-name">Java</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillsets">
+          <p class="skillsets-heading">Design</p>
+          <p class="skillsets-subheading">
+            I have developed websites using designs from below tools.
+          </p>
+          <ul>
+            <li>
+              <img src="./images/xd.png" alt="adobe-xd" />
+              <p class="skill-name">Adobe XD</p>
+            </li>
+            <li>
+              <img src="./images/figma.png" alt="figma" />
+              <p class="skill-name">Figma</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skillsets">
+          <p class="skillsets-heading">Beginner - Crypto</p>
+          <p class="skillsets-subheading">Exploring...</p>
+          <ul>
+            <li>
+              <img src="./images/blockchain.png" alt="blockchain" />
+              <p class="skill-name">Blockchain</p>
+            </li>
+            <li>
+              <img src="./images/web3.png" alt="web3" />
+              <p class="skill-name">Web3</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="title">Projects</p>
+      <div class="project">
+        <div class="heading">Music Point</div>
+        <div class="sub-heading">ReactJS - web application</div>
+        <div class="desc">
+          A decentralized web application that used blockchain technology. Users
+          post music in the blockchain Goerli test network and stands 50% change
+          to win ethers.
+          <div class="techs-used">
+            Techs used: <br />
+            ReactJS - HTML - CSS - Blockchain - Solidity - Smart Contract
+          </div>
+          <div class="links">
+            <a
+              href="https://github.com/kgsantosh770/Blockchain-Music-Point"
+              target="_blank"
+            >
+              <img src="./images/github.png" alt="github" />
             </a>
-            <div class="nav-items desktop">
-                <a href="#bio">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </nav>
-        <section id="mobileMenu" class="bottom-nav mobile">
-            <div class="nav-items">
-                <a href="#bio">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="sticky-btn">
-                <img src="./images/mobile-menu-closed.png" alt="menu"
-                    id="menuIcon">
-            </div>
-        </section>
-
-        <section id="bio">
-            <div class="name">
-                <p>Hello👋 I am <span>Santosh</span></p>
-            </div>
-            <div class="profile-image" title="click to download my resume">
-                <a type="button" href="https://drive.google.com/file/d/1HDMaC1m_0xt6LVH9cJ4jAFRkGgCSZ5p7/view?usp=sharing"
-                    class="hire-btn" target="_blank">
-                    <img src="./images/profile-image.png" alt="profile">
-                </a>
-            </div>
-            <div class="oneline-bio">
-                <p>A developer who</p>
-                <p>writes code with <span class="circle">Passion</span> ... </p>
-            </div>
-        </section>
-
-        <section id="about">
-            <p class="designation">
-                I'm a Software Engineer.
-            </p>
-            <p class="company">
-                currently working at
-                <span class="company-logo"><img src="./images/company-logo.svg"
-                        alt="company-logo"></span>
-                <span class="company-name">Accenture</span>.
-            </p>
-            <p class="brief-about">
-                I specialize in crafting engaging user interfaces.
-                Armed with expertise in HTML, CSS, JavaScript and ReactJS.
-                I strive to create intuitive and visually appealing websites
-                that seamlessly blend form and function.
-            </p>
-            <a type="button" href="https://drive.google.com/file/d/1HDMaC1m_0xt6LVH9cJ4jAFRkGgCSZ5p7/view?usp=sharing"
-                class="hire-btn" target="_blank">
-                View Resume
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="heading">Send-Krypt</div>
+        <div class="sub-heading">ReactJS - web application</div>
+        <div class="desc">
+          Web application to transfer ether from one crypto account to another.
+          Special Features: Every 20th transaction gets rewarded with eth, Low
+          transaction fee
+          <div class="techs-used">
+            Techs used: <br />
+            ReactJS - HTML - CSS - Blockchain - Solidity - Smart Contract
+          </div>
+          <div class="links">
+            <a href="https://github.com/kgsantosh770/sendkrypt" target="_blank">
+              <img src="./images/github.png" alt="github" />
             </a>
-        </section>
+          </div>
+        </div>
+      </div>
+      <a
+        class="explore"
+        href="https://github.com/kgsantosh770?tab=repositories"
+        target="_blank"
+      >
+        <span>Explore more</span>
+        <img src="./images/external-link.png" alt="external" />
+      </a>
+    </section>
 
-        <section id="experience" class="exp-edu">
-            <p class="title">Work Experience</p>
-            <div class="card">
-                <div class="time">2021 - current</div>
-                <div class="img-desc">
-                    <img src="./images/code.png" alt="code">
-                    <div class="desc">
-                        <div class="company-name">Accenture</div>
-                        <div class="designation">Software Engineer</div>
-                        <div class="role">Frontend Developer</div>
-                        <div class="details">
-                            - Converted XD and Figma designs to responsive web
-                            code.<br><br>
-                            - Applied interaction logic
-                            to components in ReactJS. <br><br>
-                            - Solved 100's of FED bugs within 2 weeks thus
-                            leading to client’s appreciation and a
-                            quality delivery. <br><br>
-                            - Received multiple recognitions and rewards for my
-                            front-end skills and client appreciation
-                            for my quick learning ability. <br><br>
-                        </div>
-                        <div class="techs">
-                            <img src="./images/react.png" alt="reactjs"
-                                title="ReactJs">
-                            <img src="./images/html.png" alt="html" title="HTML">
-                            <img src="./images/css.png" alt="css" title="CSS">
-                            <img src="./images/sass.png" alt="scss" title="SCSS">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="exp-edu">
-            <p class="title">Education</p>
-            <div class="card">
-                <div class="time">2017 - 2021</div>
-                <div class="img-desc">
-                    <img src="./images/degree.png" alt="code">
-                    <div class="desc">
-                        <div class="company-name">Velammal College of
-                            Engineering and Technology</div>
-                        <div class="designation">Bachelor's degree (BE)</div>
-                        <div class="role">Computer Science and Engineering</div>
-                        <div class="techs">
-                            <img src="./images/html.png" alt="html" title="HTML">
-                            <img src="./images/css.png" alt="css" title="CSS">
-                            <img src="./images/python.png" alt="python"
-                                title="Python">
-                            <img src="./images/java.png" alt="java" title="Java">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="time">2015 - 2017</div>
-                <div class="img-desc">
-                    <img src="./images/book.png" alt="code">
-                    <div class="desc">
-                        <div class="company-name">CEOA matriculation higher
-                            secondary school</div>
-                        <div class="designation">11th & 12th grade</div>
-                        <div class="role">Computer Science</div>
-                        <div class="techs">
-                            <img src="./images/c++.png" alt="c++" title="C++">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="current">
-            <p class="heading">
-                I'm currently <span>looking to join a team</span> who makes life
-                easier with code.
-            </p>
-            <p class="sub-heading">
-                Let's collaborate and create stunning interfaces that leave a
-                lasting impression.
-            </p>
-        </section>
-
-        <section id="skills">
-            <button class="hide" onclick="toggleSkillDetails(this)">
-                <img src="./images/eye-close.png" alt="hidden"
-                    class="eye-close">
-                <img src="./images/eye-open.png" alt="visible"
-                    class="eye-open">
-            </button>
-            <p class="skillsets-title">Skills</p>
-            <div class="all-skillsets">
-                <div class="skillsets">
-                    <p class="skillsets-heading">Frontend Skills</p>
-                    <p class="skillsets-subheading">The most experienced skills.</p>
-                    <ul>
-                        <li>
-                            <img src="./images/html.png" alt="html">
-                            <p class="skill-name">HTML</p>
-                        </li>
-                        <li>
-                            <img src="./images/css.png" alt="css">
-                            <p class="skill-name">CSS</p>
-                        </li>
-                        <li>
-                            <img src="./images/js.png" alt="javascript">
-                            <p class="skill-name">JavaScript</p>
-                        </li>
-                        <li>
-                            <img src="./images/react.png" alt="reactjs">
-                            <p class="skill-name">ReactJS</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skillsets">
-                    <p class="skillsets-heading">CSS frameworks</p>
-                    <p class="skillsets-subheading">Basic understanding of below
-                        frameworks</p>
-                    <ul>
-                        <li>
-                            <img src="./images/tailwindcss.png"
-                                alt="tailwindcss">
-                            <p class="skill-name">TailwindCSS</p>
-                        </li>
-                        <li>
-                            <img src="./images/bootstrap.png" alt="bootstrap">
-                            <p class="skill-name">Bootstrap</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skillsets">
-                    <p class="skillsets-heading">Programming</p>
-                    <p class="skillsets-subheading">Languages with good
-                        knowledge.</p>
-                    <ul>
-                        <li>
-                            <img src="./images/python.png" alt="python">
-                            <p class="skill-name">Python</p>
-                        </li>
-                        <li>
-                            <img src="./images/java.png" alt="java">
-                            <p class="skill-name">Java</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skillsets">
-                    <p class="skillsets-heading">Design</p>
-                    <p class="skillsets-subheading">I have developed websites
-                        using
-                        designs from below tools.</p>
-                    <ul>
-                        <li>
-                            <img src="./images/xd.png" alt="adobe-xd">
-                            <p class="skill-name">Adobe XD</p>
-                        </li>
-                        <li>
-                            <img src="./images/figma.png" alt="figma">
-                            <p class="skill-name">Figma</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skillsets">
-                    <p class="skillsets-heading">Beginner - Crypto</p>
-                    <p class="skillsets-subheading">Exploring...</p>
-                    <ul>
-                        <li>
-                            <img src="./images/blockchain.png" alt="blockchain">
-                            <p class="skill-name">Blockchain</p>
-                        </li>
-                        <li>
-                            <img src="./images/web3.png" alt="web3">
-                            <p class="skill-name">Web3</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <p class="title">Projects</p>
-            <div class="project">
-                <div class="heading">Music Point</div>
-                <div class="sub-heading">ReactJS - web application</div>
-                <div class="desc">
-                    A decentralized web application that used blockchain
-                    technology. Users post music in the blockchain Goerli test
-                    network and stands 50% change to win ethers.
-                    <div class="techs-used">
-                        Techs used: <br> ReactJS - HTML - CSS - Blockchain -
-                        Solidity - Smart
-                        Contract
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/kgsantosh770/Blockchain-Music-Point" target="_blank">
-                            <img src="./images/github.png" alt="github">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="heading">Send-Krypt</div>
-                <div class="sub-heading">ReactJS - web application</div>
-                <div class="desc">
-                    Web application to transfer ether from one crypto account to
-                    another.
-                    Special Features: Every 20th transaction gets rewarded with
-                    eth, Low transaction fee
-                    <div class="techs-used">
-                        Techs used: <br> ReactJS - HTML - CSS - Blockchain -
-                        Solidity - Smart
-                        Contract
-                    </div>
-                    <div class="links">
-                        <a href="https://github.com/kgsantosh770/sendkrypt" target="_blank">
-                            <img src="./images/github.png" alt="github">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a class="explore" href="https://github.com/kgsantosh770?tab=repositories"
-                target="_blank">
-                <span>Explore more</span>
-                <img src="./images/external-link.png" alt="external">
-            </a>
-        </section>
-
-        <section id="contact">
-            <p class="title">Contact</p>
-            <div class="social-accounts">
-                <a class="website" href="https://kgsantosh770.github.io/" title="website" target="_blank"><img
-                        src="./images/website.png" alt="website" title="website"></a>
-                <a class="linkedin"
-                    href="https://www.linkedin.com/in/santoshkg/"
-                    title="linkedin" target="_blank"><img
-                        src="./images/linkedin.png" alt="linkedin"
-                        title="linkedin"></a>
-                <a class="github" href="https://github.com/kgsantosh770"
-                    title="github" target="_blank"><img
-                        src="./images/github.png" alt="github" title="github"></a>
-            </div>
-            <p class="heading">
-                I'm actively <span>looking to join a team</span> who makes life
-                easier with code. or have a project in mind ? Let's connect
-            </p>
-            <a href="mailto:santhoshkrishna770@gmail.com" class="email">
-                👉 santhoshkrishna770@gmail.com
-            </a>
-            <a href="tel:+918825840570" class="phone">
-                👉 +91 8825840570
-            </a>
-            <p class="place">
-                👉 Currently working at Bengaluru, Karnataka, India.
-            </p>
-            <a type="button" href="mailto:santhoshkrishna770@gmail.com"
-                class="hire-btn">
-                Let's talk
-            </a>
-        </section>
-        <script src="index.js"></script>
-    </body>
+    <section id="contact">
+      <p class="title">Contact</p>
+      <div class="social-accounts">
+        <a
+          class="website"
+          href="https://kgsantosh770.github.io/"
+          title="website"
+          target="_blank"
+          ><img src="./images/website.png" alt="website" title="website"
+        /></a>
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/santoshkg/"
+          title="linkedin"
+          target="_blank"
+          ><img src="./images/linkedin.png" alt="linkedin" title="linkedin"
+        /></a>
+        <a
+          class="github"
+          href="https://github.com/kgsantosh770"
+          title="github"
+          target="_blank"
+          ><img src="./images/github.png" alt="github" title="github"
+        /></a>
+      </div>
+      <p class="heading">
+        I'm actively <span>looking to join a team</span> who makes life easier
+        with code. or have a project in mind ? Let's connect
+      </p>
+      <a href="mailto:santhoshkrishna770@gmail.com" class="email">
+        👉 santhoshkrishna770@gmail.com
+      </a>
+      <a href="tel:+918825840570" class="phone"> 👉 +91 8825840570 </a>
+      <p class="place">👉 Currently working at Chennai, Tamil Nadu, India.</p>
+      <a
+        type="button"
+        href="mailto:santhoshkrishna770@gmail.com"
+        class="hire-btn"
+      >
+        Let's talk
+      </a>
+    </section>
+    <script src="index.js"></script>
+  </body>
 </html>
