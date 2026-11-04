@@ -181,16 +181,23 @@
   function initFab() {
     var btn = document.getElementById('fabBtn');
     var menu = document.getElementById('fabMenu');
+    var overlay = document.getElementById('fabOverlay');
     if (!btn || !menu) return;
 
+    function closeFab() {
+      menu.classList.remove('open');
+      if (overlay) overlay.classList.remove('open');
+    }
+
     btn.addEventListener('click', function () {
-      menu.classList.toggle('open');
+      var isOpen = menu.classList.toggle('open');
+      if (overlay) overlay.classList.toggle('open', isOpen);
     });
 
-    document.addEventListener('click', function (e) {
-      if (!e.target.closest('.fab')) {
-        menu.classList.remove('open');
-      }
+    if (overlay) overlay.addEventListener('click', closeFab);
+
+    menu.querySelectorAll('.fab-item').forEach(function (item) {
+      item.addEventListener('click', closeFab);
     });
   }
 
