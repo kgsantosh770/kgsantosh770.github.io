@@ -108,6 +108,14 @@
       modal.setAttribute('aria-hidden', 'true');
     });
 
+    var contactLink = document.getElementById('modalContact');
+    if (contactLink) {
+      contactLink.addEventListener('click', function () {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+      });
+    }
+
     modal.addEventListener('click', function (e) {
       if (e.target === modal) {
         modal.classList.remove('open');
@@ -120,6 +128,37 @@
         modal.classList.remove('open');
         modal.setAttribute('aria-hidden', 'true');
       }
+    });
+  }
+
+  function initContactForm() {
+    var form = document.getElementById('contactForm');
+    var btn = document.getElementById('formSubmit');
+    var success = document.getElementById('formSuccess');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          form.style.display = 'none';
+          success.classList.add('show');
+        } else {
+          btn.textContent = 'Failed — try again';
+          btn.disabled = false;
+        }
+      }).catch(function () {
+        btn.textContent = 'Failed — try again';
+        btn.disabled = false;
+      });
     });
   }
 
@@ -150,6 +189,7 @@
     initNav();
     initSmoothScroll();
     initFreelanceModal();
+    initContactForm();
     initScrollSpy();
   }
 

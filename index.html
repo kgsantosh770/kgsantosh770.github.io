@@ -48,7 +48,7 @@
       </div>
       <p class="modal-env">I work on a <span class="em">MacBook</span> with Cursor IDE + Claude — optimized for fast, high-quality output.</p>
       <div class="modal-footer">
-        <a href="mailto:santhoshkrishna770@gmail.com?subject=Freelance%20Inquiry" class="modal-cta">Discuss a project →</a>
+        <a href="#contact" class="modal-cta" id="modalContact">Discuss a project →</a>
       </div>
     </div>
   </div>
@@ -72,7 +72,7 @@
       <a href="https://linkedin.com/in/santoshkg/" target="_blank" rel="noopener noreferrer" class="sidebar-item">LinkedIn ↗</a>
       <div class="sidebar-divider"></div>
       <p class="sidebar-label">Location</p>
-      <p class="sidebar-text">India · Open to relocate</p>
+      <p class="sidebar-text">India · Available remotely worldwide</p>
     </div>
   </aside>
 
@@ -99,7 +99,7 @@
 
     <!-- Hero -->
     <section class="hero" id="hero">
-      <p class="hero-tag anim"><span class="hero-tag-vibrant">Full-Stack Engineer &middot; AI-Accelerated Developer</span> <span class="hero-tag-muted">&middot; India &middot; Open to relocate globally</span></p>
+      <p class="hero-tag anim"><span class="hero-tag-vibrant">Full-Stack Engineer &middot; AI-Accelerated Developer</span> <span class="hero-tag-muted">&middot; India &middot; Available remotely worldwide</span></p>
       <h1 class="hero-name anim">Santosh<span class="em">.</span></h1>
       <p class="hero-typing anim" aria-label="Roles"><span id="typingText"></span><span class="typing-cursor"></span></p>
       <p class="hero-sub anim">Full-stack engineer who builds with <span class="em">AI-first velocity</span> — I use Cursor + Claude to turn multi-month roadmaps into sprint-level deliverables, without cutting corners.</p>
@@ -273,11 +273,39 @@
     <section class="contact" id="contact">
       <h2 class="contact-h2 anim">Let's work together.</h2>
       <p class="contact-sub anim">Looking for a full-stack engineer who ships fast with AI? I'm open to new opportunities.</p>
-      <div class="contact-links anim">
-        <a href="mailto:santhoshkrishna770@gmail.com">santhoshkrishna770@gmail.com</a>
-        <a href="tel:+918825840570">+91 88258 40570</a>
-        <a href="https://linkedin.com/in/santoshkg/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/kgsantosh770" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <form class="contact-form anim" id="contactForm" action="https://formspree.io/f/moeeyllg" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@company.com">
+          </div>
+        </div>
+        <div class="form-row form-row-full">
+          <div class="form-group">
+            <label for="phone">Phone <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+          </div>
+        </div>
+        <div class="form-row form-row-full">
+          <div class="form-group">
+            <label for="message">What's on your mind?</label>
+            <textarea id="message" name="message" required rows="4" placeholder="A project idea, a role, a collaboration — anything goes..."></textarea>
+          </div>
+        </div>
+        <input type="hidden" name="_subject" value="Portfolio Contact — New Message">
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit" class="form-submit" id="formSubmit">Send message →</button>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <svg class="tick-circle" width="48" height="48" viewBox="0 0 48 48">
+          <circle class="tick-ring" cx="24" cy="24" r="20" fill="none" stroke="#34d399" stroke-width="2"/>
+          <path class="tick-check" d="M14 24l8 8 12-14" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <p class="success-text">Message sent — I'll get back to you soon.</p>
       </div>
     </section>
 
