@@ -98,6 +98,7 @@
     function openModal() {
       modal.classList.add('open');
       modal.setAttribute('aria-hidden', 'false');
+      if (typeof gtag === 'function') gtag('event', 'freelance_modal_open', { event_category: 'engagement' });
     }
 
     btn.addEventListener('click', openModal);
@@ -151,6 +152,7 @@
           form.reset();
           form.style.display = 'none';
           success.classList.add('show');
+          if (typeof gtag === 'function') gtag('event', 'contact_form_submit', { event_category: 'engagement' });
         } else {
           btn.textContent = 'Failed — try again';
           btn.disabled = false;
