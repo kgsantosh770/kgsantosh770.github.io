@@ -381,6 +381,12 @@ section + section { border-top: 1px solid var(--border); }
 
 .role-stack { font-size: 13px; color: var(--text-3); }
 
+.role-award {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 12px; font-size: 13px; color: var(--accent);
+}
+.role-award strong { font-weight: 600; }
+
 /* ---- Skills ---- */
 
 .skill-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px 48px; }
@@ -405,6 +411,7 @@ section + section { border-top: 1px solid var(--border); }
 /* ---- Extras ---- */
 
 .extras { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.extras-full { grid-column: 1 / -1; }
 
 .extras-col h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; }
 .extras-col p { font-size: 14px; color: var(--text-2); line-height: 1.6; }
