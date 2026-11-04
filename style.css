@@ -269,6 +269,18 @@ section + section { border-top: 1px solid var(--border); }
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
 
+.resume-dl {
+  display: inline-flex; align-items: center; vertical-align: middle;
+  color: var(--text-3); -webkit-text-fill-color: initial;
+  margin-left: 4px; transition: color .2s;
+}
+.resume-dl:hover { color: var(--accent); }
+
+.sidebar-resume {
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.sidebar-resume svg { flex-shrink: 0; }
+
 .hero-typing {
   font-size: clamp(16px, 2.5vw, 22px); color: var(--text-2);
   margin-bottom: 24px; min-height: 1.4em; font-weight: 400;
